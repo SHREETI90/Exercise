@@ -3,71 +3,71 @@ package Day4;
 import java.util.Scanner;
 
 public class Student {
-	String name;
-	int roll;
-	String subject;
-	int section;
-	int marks;
-	double fees;
+	String Name;
+	int Roll;
+	String Subject;
+	int Section;
+	int Marks;
+	double Fees;
 	Scanner sc=new Scanner(System.in);
 
 
 	// add getters and setters
 
 	public String getName() {
-	return name;
+	return Name;
 	}
 
-	public void setName(String n) {
-	this.name = n;
+	public void setName(String name) {
+	this.Name = name;
 	}
 
 	public int getRoll() {
-	return roll;
+	return Roll;
 	}
 
-	public void setRoll(int r) {
-	this.roll = r;
+	public void setRoll(int roll) {
+	this.Roll = roll;
 	}
 
 	public String getSubject() {
-	return subject;
+	return Subject;
 	}
 
-	public void setSubject(String s) {
-	this.subject = s;
+	public void setSubject(String subject) {
+	this.Subject = subject;
 	}
 	public int getSection() {
-	return section;
+	return Section;
 	}
 
-	public void setSection(int sec) {
-	this.section = sec;
+	public void setSection(int section) {
+	this.Section = section;
 	}
 	public int getMarks() {
-	return marks;
+	return Marks;
 	}
 
-	public void setMarks(int m) {
-	this.marks = m;
+	public void setMarks(int marks) {
+	this.Marks = marks;
 	}
 
 	public double getFees() {
-	return fees;
+	return Fees;
 	}
 
-	public void setFees(double f) {
-	this.fees = f;
+	public void setFees(double fees) {
+	this.Fees = fees;
 	}
 	public void calculateMarks()
 	{
 	// ......
 	System.out.println("Enter subjects:");
-	subject = sc.nextLine();
+	Subject = sc.nextLine();
 
 	System.out.println("Enter marks:");
-	marks = sc.nextInt();
-	if(marks<=50)
+	Marks = sc.nextInt();
+	if(Marks<=50)
 	{
 	calculateFees(500);
 	}
@@ -78,10 +78,10 @@ public class Student {
 	*  if student marks is less than 50
 	*  ---->> fees += 50%
 	* */
-	public void calculateFees(double f)
+	public void calculateFees(double fees)
 	{
-	fees= (0.5*f)+f ;
-	System.out.println(fees);
+	Fees= (0.5*fees)+fees ;
+	System.out.println(Fees);
 
 	}
 }
