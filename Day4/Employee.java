@@ -36,7 +36,7 @@ public class Employee {
 		}
 		else
 		{
-			if(exp<=3 && salary>=3000 )
+			if(exp<3 && salary>=3000 )
 			{
 			System.out.println("This Salary is not possible on having less then 3years of Experience");
 			}
